@@ -1,0 +1,107 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+// Function to check if a player has won
+bool checkWin(const vector<vector<string>>& board, const string& player) 
+{
+    for (int i = 0; i < 3; ++i)
+    {
+        // Check straight line paths
+        if (board[i][0] == player && board[i][1] == player && board[i][2] == player) 
+        {
+            return true;
+        }
+        if (board[0][i] == player && board[1][i] == player && board[2][i] == player) 
+        {
+            return true;  
+        }
+    }
+
+    // Check diagonals
+    if (board[0][0] == player && board[1][1] == player && board[2][2] == player) 
+    {
+        return true;
+    }
+    if (board[0][2] == player && board[1][1] == player && board[2][0] == player) 
+    {
+        return true;
+    }
+
+    return false;
+}
+
+int main()
+{
+    cout << endl;
+    cout << "The format of the board for this game is the Tic-Tac-Toe format:\n"
+            << "-Input consists of a single line containing the characters ., o and x.\n"
+            << "-The symbol . represents an empty cell on the board.\n"
+            << "-The symbol o represents a mark placed by player O.\n" 
+            << "-The symbol x represents a mark placed by player X.\n" << endl;
+
+    cout << "Please input the board: " ;
+
+    // Read in the board format
+    string input;
+    cin >> input;
+
+    cout << endl;
+
+    // Variable to keep track of the current index of the input
+    int inputIndex = 0;
+
+    // Variable to keep track of how many empty spaces there are
+    int empty = 0;
+    
+    // Create a 2D vector to represent a human-readable of the board
+    vector<vector<string>> board(3, vector<string>(3));
+
+    // Transfer the inputted board to the 2D vector
+    for(int j = 0; j < 3; j++)
+    {
+        for(int i = 0; i < 3; i++)
+        {
+            if(input[inputIndex] == '.')
+            {
+                // Human-readable form of the empty space is different
+                board[j][i] = '_';
+                empty++;
+            }
+            else
+            {
+                board[j][i] = input[inputIndex];
+            }
+           
+            inputIndex++;
+        }
+    }
+
+    // Flags to check whether a player has won
+    bool xWins = checkWin(board, "x");
+    bool oWins = checkWin(board, "o");
+
+    // Print out the result of the board
+    cout << "Board result: ";
+    if(xWins) 
+    {
+        cout << "X wins" << endl;
+    } 
+    else if(oWins) 
+    {
+        cout << "O wins" << endl;
+    } 
+    else if(empty > 0)
+    {
+        cout << "In progress" << endl;
+    } 
+    else 
+    {
+        cout << "Draw" << endl;
+    }
+
+    return 0;
+}
