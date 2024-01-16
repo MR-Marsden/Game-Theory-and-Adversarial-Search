@@ -4,5 +4,6 @@ Here are some examples of the ideas that come from Game Theory and Adversarial S
 ## Folder Descritions and Structure:
 
 * **Iterated Elimination of Dominated Strategies:** Contains a C++ program that executes the IEDS algorithm to find a Nash equilibrium for a two-player game.
-  *  **IteratedEliminationOfDominatedStrategies.cpp:**
-  *  **ieods.bat:**
+* **Board Format:**
+* **Board Moves:**
+
