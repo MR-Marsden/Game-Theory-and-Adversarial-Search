@@ -30,12 +30,13 @@ minimax.bat
 ## Sample Input and Output for each file:
 
 **IteratedEliminationOfDominatedStrategies.cpp:**  
-Sample Input:  
+Sample Input  
+------------  
 2  
 3,3 0,5  
 5,0 1,1  
 
-Sample Output:  
+Sample Output  
 1,1
 
 **MinimaxBoard.cpp:**  
