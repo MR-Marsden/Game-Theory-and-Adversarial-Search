@@ -47,15 +47,25 @@ _ x o
 x _ _  
 o _ x  
 
-**MinimaxMoves.cpp**  
+**MinimaxMoves.cpp:**  
+Sample Input  
+.xox..o.x  
+0 1 1  
+Sample Output  
+_ x o  
+x x _  
+o _ x  
+
+**TerminationCheck.cpp:**  
 Sample Input  
 .........  
-0 0 0  
 Sample Output  
-x _ _  
-_ _ _  
-_ _ _  
+In progress  
 
-
+**Minimax.cpp:**  
+Sample Input  
+.xoxo.o.x  
+Sample Output  
+O wins  
 
 
