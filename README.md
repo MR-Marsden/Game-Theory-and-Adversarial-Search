@@ -31,12 +31,12 @@ minimax.bat
 
 * **IteratedEliminationOfDominatedStrategies.cpp:**
 
-Sample Input:
-2
-3,3 0,5
-5,0 1,1
+Sample Input:  
+2  
+3,3 0,5  
+5,0 1,1  
 
-Sample Output:
+Sample Output:  
 1,1
 
 
