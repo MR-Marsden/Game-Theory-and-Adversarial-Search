@@ -47,5 +47,15 @@ _ x o
 x _ _  
 o _ x  
 
+**MinimaxMoves.cpp**  
+Sample Input  
+.........  
+0 0 0  
+Sample Output  
+x _ _  
+_ _ _  
+_ _ _  
+
+
 
 
