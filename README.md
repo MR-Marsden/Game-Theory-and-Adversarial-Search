@@ -19,9 +19,9 @@ Here are some examples of the ideas that come from Game Theory and Adversarial S
 
 ## How to Run:
 
-Each folder contains a .bat file to compile and run the C++ programs.
+Each folder contains a Windows batch file (.bat) to compile and run the C++ programs. An example is shown below:
 
-'''
+```
 minimax.bat 
-'''
+```
 
