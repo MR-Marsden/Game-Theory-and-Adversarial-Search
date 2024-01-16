@@ -16,3 +16,12 @@ Here are some examples of the ideas that come from Game Theory and Adversarial S
     * TerminationCheck.cpp
   * minimax.bat
   * Minimax.cpp
+
+## How to Run:
+
+Each folder contains a .bat file to compile and run the C++ programs.
+
+'''
+minimax.bat 
+'''
+
